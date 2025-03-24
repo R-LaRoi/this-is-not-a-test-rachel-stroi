@@ -8,7 +8,7 @@ Pick any New York State website (or any government website) and perform an acces
 
 The main purpose of this exercise is to go beyond citing failures of WCAG or other criteria: It is to have a discussion about what failed, why it is a blocker for assistive technology use, and what remediations can be taken to fix issues (either via code, technology changes, or content editing and quality control).
 
-Keep at the forefront our real, disabled users and how they interact with websites can digital content. Sometimes our job is to educate developers, architects, content editors, and non-technical people about barriers to access and the experience of disabled users with technology. 
+Keep at the forefront our real, disabled users and how they interact with websites and digital content. Sometimes our job is to educate developers, architects, content editors, and non-technical people about barriers to access and the experience of disabled users with technology. 
 
 ## Guidelines
 - This does not need to be exahustive. No points lost for missing issues and there are no "gotcha!" moments here. 
