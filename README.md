@@ -24,7 +24,7 @@ Each candidate track has two choices, with additional instructions in the folder
 ### Exercises to Choose from for Accessibility Solutions (Choose 1):
 1. Accessibility audit of the homepage of any New York State website, using WCAG 2.2 AA as your guideline.
 OR
-2. Create and discuss an accessibile code pattern
+2. Create and discuss an accessible code pattern
 
 ### Exercises to Choose from for Web Solutions (Choose 1):
 1. Build a few components from a NYS website with entirely your own code
