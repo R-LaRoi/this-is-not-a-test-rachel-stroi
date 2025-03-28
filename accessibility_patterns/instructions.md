@@ -22,7 +22,7 @@ Keep at the forefront our real, disabled users and how they interact with websit
 - Please do not just copy and paste code from a pattern library and annotate. This is about creating patterns that are accessible, as we are frequently asked to remediate, evaluate, and create conformant code patterns that might not be boilerplate elsewhere. 
 - Indicate which screen readers, OS's, and devices you tested on.
 
-## What to submit in you pull request
+## What to submit in your pull request
 - A well-formatted and creative solution that can be as simple as some html, css, and javascript. 
 - Organized code, with explanations and notations as necessary.
 - A functional demo that can be used during a live demonstration.
