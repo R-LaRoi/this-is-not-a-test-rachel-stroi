@@ -20,7 +20,7 @@ Keep at the forefront our real users (disabled users too!) and how they interact
 - Go ahead and use react or vue or svelte or cool-awesome-cactus-juice-red-blue-team.js, but keep in mind: our development workflows require careful architectural analysis of dependencies, skill sets, and use cases with real users and accessibility at the forefront. Just because people use react, doesn't mean we're going to build everything with it. 
 - Please do not just copy and paste code from a pattern library and annotate. This is about creating front-end patterns, as we are frequently asked to remediate, evaluate, and create code patterns that might not be boilerplate elsewhere. 
 
-## What to submit in you pull request
+## What to submit in your pull request
 - A well-formatted and creative solution that can be as simple as some html, css, and javascript. 
 - Organized code, with explanations and notations as necessary.
 - A functional demo that can be used during a live demonstration.
