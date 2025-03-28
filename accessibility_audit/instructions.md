@@ -17,7 +17,7 @@ Keep at the forefront our real, disabled users and how they interact with websit
 - Make sure to include code-level suggestions for conformant accessible code patterns for failures where the underlying technology - and not the content - is at fault.
 - Indicate which screen readers, OS's, and devices you tested on.
 
-## What to submit in you pull request
+## What to submit in your pull request
 - A well-formatted and creative solution that will serve as your basis for a conformance report. 
 - This can be a simple html document with content in it for your report. Or markdown, or a static generated website, or something entirely different. 
 - Try to avoid PDFs and word documents, unless very helpful or necessary. 
