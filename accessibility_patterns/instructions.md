@@ -1,7 +1,7 @@
 # Instructions for Accessibility Pattern
 Hello! Glad you have made it this far into the process for the Accessibility Solutions position.
 
-Estimated time to complete: 1-2 hours. 
+Estimated time to complete: 1 hour
 
 ## The Assignment
 Create an accessible code component pattern, demo, and guided discussion of how it meets both WCAG standards and real user expectations. You will be required to feature at least some interactive elements such as links, buttons with actions, disclosure or progressive display patterns, or other common patterns that frequently fail accessibility testing and assistive technology evaluation. Be prepared to discuss the minutia of WAI-ARIA choices, semantic or non-semantic structure, and modifications using javascript. 

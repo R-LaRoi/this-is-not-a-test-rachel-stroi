@@ -19,11 +19,10 @@ Thank you for applying to work for the New York State Digital Service! This is t
 - For simple text, please use markdown or html, try not to submit pdfs or word documents unless absolutely necessary
 
 ## Exercises
-Each candidate track has two choices, with additional instructions in the folder provided in this repo.
+Accessibility Solutions has two exercises and web solutions has a choice, with two options.
 
-### Exercises to Choose from for Accessibility Solutions (Choose 1):
+### Exercises to for Accessibility Solutions (BOTH):
 1. Accessibility audit of the homepage of any New York State website, using WCAG 2.2 AA as your guideline.
-OR
 2. Create and discuss an accessible code pattern
 
 ### Exercises to Choose from for Web Solutions (Choose 1):

@@ -4,7 +4,7 @@ Hello! Glad you have made it this far into the process for the Web Solutions pos
 Estimated time to complete: 1-2 hours. 
 
 ## The Assignment
-Build a webpage (just a singe page is ok, a few would be better).
+Build a webpage (just a single page is ok).
 
 Come up with some components, a theme, and be ready to explain the features you built and what choices you made. Be creative, it doesn't have to be about anything in particular - this is a creative exercise. 
 

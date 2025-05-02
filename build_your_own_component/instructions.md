@@ -13,6 +13,7 @@ Examples include (but are not limited to):
 - Main website navigation *complex*
 - Filter display, with checkboxes (does not need to autoload or refresh data on selection) *complex*
 - Popular Services tile queue *moderate*
+- Make up something totally new!
 - Some examples are at [Digital Service Sandbox Patterns](https://nys-digital-service.netlify.app/components/) and of course from anywhere within [NY.gov](https://ny.gov)
 
 The main purpose of this exercise is to demonstrate your ability to do front-end web development. We work within the constraints of a branding guide and design pattern library, but frequently have to build new patterns with the smaller token pieces of other components, color schemes, and patterns.

@@ -1,7 +1,7 @@
 # Instructions for Accessibility Audit
 Hello! Glad you have made it this far into the process for the Accessibility Solutions position.
 
-Estimated time to complete: 1-2 hours. 
+Estimated time to complete: Less than 1 hour. 
 
 ## The Assignment
 Pick any New York State website (or any government website) and perform an accessibility audit of just the homepage with the intent of generating a conformance report. Use any standard methods or formats you would like including using automated tools to guide you in the right direction (WAVE, aXeCore, pa11y, etc). Since automated testing can only evaluate ~30% of WCAG issues, you'll need to do manual testing. Ensure that you test using a screen reader of your choice - or multiple (we use VoiceOver and NVDA because both are free). 
