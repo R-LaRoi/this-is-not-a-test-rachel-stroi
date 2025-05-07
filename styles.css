@@ -9,6 +9,7 @@ body {
   padding-top: 160px;
 }
 
+/*  nav  --------------------------------- */
 .nav-container {
   width: 100%;
   background-color: white;
@@ -20,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 100;
 }
 
 .logo {
@@ -56,35 +58,21 @@ body {
 
 .nav ul li a:hover {
   color: #457aa5;
-  margin-bottom: 3px;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-.search-icon {
-  display: none;
-  cursor: pointer;
-  color: #333;
-  transition: color 0.3s ease;
-}
-
-.search-icon:hover {
-  color: #0066cc;
-}
-
+/*  nav scroll -------------------------------- */
 .nav-container.scrolled {
   position: fixed;
   padding: 10px 20px;
-  display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   z-index: 1000;
 }
 
 .nav-container.scrolled .logo {
-  margin-bottom: 0;
-  margin-right: 20px;
+  margin: 0 20px 0 0;
 }
 
 .nav-container.scrolled .logo img {
@@ -103,10 +91,7 @@ body {
   display: block;
 }
 
-section {
-  /* padding: 20px; */
-}
-
+/* hero video ------------------------------------------- */
 video {
   width: 100%;
   height: auto;
@@ -121,17 +106,130 @@ video {
   font-size: 50px;
   font-weight: 700;
   background-color: #154973;
-  color: #ffff;
+  color: #fff;
   position: relative;
   bottom: 29px;
-  padding: 70px 0px 50px 30px;
+  padding: 70px 0 50px 30px;
 }
 
 .subtext {
-  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-weight: 300;
 }
-.spacer {
-  height: 1500px;
+
+/* pro drop down menu ----------------------------------*/
+.programs-menu {
+  padding: 20px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 0;
+}
+
+.programs-button {
+  margin-top: 20px;
+  background: #face01;
+  width: 210px;
+  color: #154973;
+  font-weight: 400;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: inherit;
+}
+
+.programs-button:hover,
+.programs-toggle-label:hover .programs-button {
+  background-color: #8fadc4;
+}
+
+.programs-toggle-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.programs-toggle-label {
+  display: block;
+  cursor: pointer;
+}
+
+.programs-links {
+  border-top: 1px solid #8fadc4;
+  width: 100vw;
+  left: -30px;
+  background-color: #154973;
+  position: absolute;
+  top: 105%;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 100;
+}
+
+.programs-toggle-checkbox:checked ~ .programs-links {
+  opacity: 1;
+  visibility: visible;
+}
+
+.programs-links ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 1200px;
+}
+
+.programs-links ul li {
+  display: flex;
+  align-items: center;
+}
+
+.programs-links ul li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.programs-links ul li label {
+  display: block;
+  text-align: left;
+  color: #fff;
+  padding: 8px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.programs-links ul li label:hover {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.programs-links ul li input[type="checkbox"]:checked + label {
+  background-color: #fff;
+  color: #154973;
+  font-weight: 700;
+}
+
+.programs-links ul li input[type="checkbox"]:checked + label:hover {
+  background-color: #ccc;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
