@@ -440,3 +440,16 @@ video {
     margin-top: 30px;
   }
 }
+
+/* footer ----------------------------------------------- */
+
+.footer-container {
+  background-color: #457aa5;
+  color: #fff;
+  padding: 20px;
+}
+.footer-lg img {
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+}

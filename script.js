@@ -72,3 +72,37 @@ function renderPrograms(programItems) {
     container.appendChild(programCard);
   });
 }
+
+//  footer links -----------------------------
+
+const footerItems = [
+  "Accessibility",
+  "Agencies",
+  "App Directory",
+  "Counties",
+  "Disclaimer",
+  "Events",
+  "Language Access",
+  "Privacy Policy",
+  "Programs",
+  "Services",
+];
+
+function renderFooter(footerItems) {
+  const footerColumn = document.getElementById("footer-column-1");
+  const ulElement = document.createElement("ul");
+  ulElement.className = "footer-links";
+
+  footerItems.forEach((linkItem) => {
+    const listItem = document.createElement("li");
+    listItem.className = "ft-link";
+    listItem.textContent = linkItem;
+    ulElement.appendChild(listItem);
+  });
+
+  footerColumn.appendChild(ulElement);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  renderFooter(footerItems);
+});
