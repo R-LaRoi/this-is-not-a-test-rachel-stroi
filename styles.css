@@ -283,3 +283,62 @@ video {
   color: #282a35;
   line-height: 1.3;
 }
+
+/* media queries for grid ---------------------------- */
+@media only screen and (max-width: 992px) {
+  .program-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .program-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 5;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .program-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .program-card {
+    border-right: none;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 0 20px 0;
+    margin-bottom: 20px;
+  }
+
+  .program-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .program-image {
+    height: auto;
+    max-height: 250px;
+  }
+
+  .program-category {
+    font-size: 11px;
+    margin: 10px 0;
+  }
+
+  .program-title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .program-subtitle {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .program-card + .program-card {
+    margin-top: 30px;
+  }
+}
