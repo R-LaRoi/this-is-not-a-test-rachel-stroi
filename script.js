@@ -1,15 +1,23 @@
-//  nav scroll   --------
-window.addEventListener("scroll", () => {
+//  nav scroll   -------------------------
+
+document.addEventListener("DOMContentLoaded", function () {
   const navContainer = document.querySelector(".nav-container");
+  const mobileMenu = document.querySelector(".mobile-menu-btn");
 
-  if (window.scrollY > 100) {
-    navContainer.classList.add("scrolled");
-  } else {
-    navContainer.classList.remove("scrolled");
-  }
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      navContainer.classList.add("scrolled");
+    } else {
+      navContainer.classList.remove("scrolled");
+    }
+  });
+
+  mobileMenu.addEventListener("click", function () {
+    navContainer.classList.toggle("mobile-active");
+    mobileMenu.classList.toggle("active");
+  });
 });
-
-//  programs dropdown menu ----------
+//  programs dropdown menu ------------------------
 
 document.addEventListener("DOMContentLoaded", () => {
   const toggleCheckbox = document.getElementById("programs-dropdown-toggle");
@@ -40,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//  programs data cards  ----------------
+//  programs data cards  -----------------------------
 
 document.addEventListener("DOMContentLoaded", function () {
   renderPrograms(programsData);
