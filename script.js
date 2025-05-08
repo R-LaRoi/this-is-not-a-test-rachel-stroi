@@ -39,3 +39,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+//  programs data cards  ----------------
+
+document.addEventListener("DOMContentLoaded", function () {
+  renderPrograms(programsData);
+});
+
+function renderPrograms(programItems) {
+  const container = document.getElementById("program-container");
+
+  programItems.forEach((program) => {
+    const programCard = document.createElement("div");
+    programCard.className = "program-card";
+
+    const programHTML = `
+            <img src="${program.image}" alt="${program.title}" class="program-image">
+            <div class="program-category">${program.program}</div>
+            <h2 class="program-title">${program.title}</h2>
+            <p class="program-subtitle">${program.subtitle}</p>
+        `;
+
+    programCard.innerHTML = programHTML;
+    container.appendChild(programCard);
+  });
+}

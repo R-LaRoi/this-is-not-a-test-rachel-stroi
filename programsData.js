@@ -1,6 +1,6 @@
 const programsData = [
   {
-    image: "/images/environment.jpg",
+    image: "/images/environment.png",
     title: "Clean Water, Clean Air and Green Jobs Environmental Bond Act",
     subtitle:
       "Bond Act Funding will support new and expanded projects to safeguard drinking water sources, reduce pollution, and protect communities and natural resources from climate change.",
@@ -8,7 +8,7 @@ const programsData = [
       "Culture & Recreation, Education and Arts, Environment, Government Operations, Health",
   },
   {
-    image: "/images/liberty.jpg",
+    image: "/images/liberty.png",
     title: "Federal Workers: We Want You",
     subtitle:
       "If you have lost your federal job due to cuts, or just want to get out, New York says You're Hired!",
@@ -54,6 +54,6 @@ const programsData = [
     title: "NYSDOT Employment Opportunities",
     subtitle:
       "Join the team at NYSDOT, an essential agency that affects the every-day lives of those who live, work, and travel in New York State.",
-    program: "Education and Arts",
+    program: "Governor's Initiatives, Government Operations",
   },
 ];
