@@ -447,9 +447,31 @@ video {
   background-color: #457aa5;
   color: #fff;
   padding: 20px;
+  display: flex;
 }
 .footer-lg img {
   width: 100%;
   max-width: 150px;
   margin: 0 auto;
+}
+
+.ft-link {
+  list-style: none;
+  letter-spacing: 0.3px;
+}
+
+.footer-links {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0px 25px;
+  list-style: none;
+  padding: 0;
+  margin-top: 7%;
+  font-size: 14px;
+}
+
+.footer-left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
