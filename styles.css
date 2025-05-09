@@ -561,3 +561,59 @@ video {
   flex-direction: column;
   gap: 10px;
 }
+
+/* engagement and footer media ------------------------------------- */
+@media only screen and (max-width: 768px) {
+  .engagement-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .eng-text {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .eng-text-2 {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+
+  .eng-lg {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .eng-lg img {
+    width: 130px;
+  }
+
+  .eng-btn {
+    margin: 0 20px 10px 0px;
+    width: 100%;
+  }
+
+  .eng-social {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .eng-feedback {
+    padding: 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    grid-auto-flow: row;
+    gap: 15px 0;
+    padding: 0;
+  }
+}
