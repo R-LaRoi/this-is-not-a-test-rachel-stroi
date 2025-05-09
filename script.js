@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileMenu.classList.toggle("active");
   });
 });
-//  programs dropdown menu ------------------------
+
+//  programs dropdown menu toggle ------------------------
 
 document.addEventListener("DOMContentLoaded", () => {
   const toggleCheckbox = document.getElementById("programs-dropdown-toggle");
@@ -35,6 +36,22 @@ document.addEventListener("DOMContentLoaded", () => {
       toggleCheckbox.checked = false;
     }
   });
+});
+
+// programs dropdown menu selections ------------------------------------------------------------
+function renderProgramsMenu(programsMenuItems) {
+  const container = document.querySelector(".programs-links");
+  const ulProgramsMenu = document.createElement("ul");
+  programsMenuItems.forEach((menuItem) => {
+    const programItem = document.createElement("li");
+    const programHTML = `
+                <input type="checkbox" id="${menuItem.id}" class="program-checkbox">
+                <label for="${menuItem.id}">${menuItem.label}</label>
+            `;
+    programItem.innerHTML = programHTML;
+    ulProgramsMenu.appendChild(programItem);
+  });
+  container.appendChild(ulProgramsMenu);
 
   // select programs
   const programCheckboxes = document.querySelectorAll(".program-checkbox");
@@ -46,15 +63,16 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     });
   });
-});
+}
 
-//  programs data cards  -----------------------------
+//  programs data cards and menu  -----------------------------
 
 document.addEventListener("DOMContentLoaded", function () {
-  renderPrograms(programsData);
+  renderProgramsCards(programsData);
+  renderProgramsMenu(programsMenu);
 });
 
-function renderPrograms(programItems) {
+function renderProgramsCards(programItems) {
   const container = document.getElementById("program-container");
 
   programItems.forEach((program) => {

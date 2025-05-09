@@ -16,6 +16,8 @@
       rel="stylesheet" />
   </head>
   <body>
+
+    <!-- navigation ----------------------- -->
 <section class="nav--">
     <div class="nav-container">
     <span class="nav-border"></span>
@@ -30,13 +32,14 @@
           <li><a href="#">Services</a></li>
           <li><a href="#">Programs</a></li>
           <li><a href="#">News</a></li>
-          <li><a href="#">Government</a></li>
+         
+          <li><a href="./gov_page/government.html">Government</a></li>
         </ul>
       </nav>
     </div>
 </section>
 
-
+<!--   hero ----------------------------------- -->
  <section class="hero--">
       <video
         src="images/nys-hero-video.mp4"
@@ -44,6 +47,8 @@
         muted
         loop
         playsinline></video>
+
+        <!-- text overlay ---------------------->
       <div class="hero-text">
       <div class="title-main">
         <div>Programs</div>
@@ -51,9 +56,9 @@
           Learn about programs and initiatives around New York State
         </p>
 
+        <!--  program button ---------------------->
         <div class="programs-menu">
-          <input
-            type="checkbox"
+          <input type="checkbox"
             id="programs-dropdown-toggle"
             class="programs-toggle-checkbox"
             aria-haspopup="true"
@@ -62,90 +67,23 @@
             <button class="programs-button">Select a program</button>
           </label>
           <div class="programs-links">
-            <ul>
-              <li>
-                <input
-                  type="checkbox"
-                  id="program-culture"
-                  class="program-checkbox" />
-                <label for="program-culture">Culture & Recreation</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="program-disability"
-                  class="program-checkbox" />
-                <label for="program-disability">Disability</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="program-econ"
-                  class="program-checkbox" />
-                <label for="program-econ">Economic Development</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="program-edu"
-                  class="program-checkbox" />
-                <label for="program-edu">Education and Arts</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="program-env"
-                  class="program-checkbox" />
-                <label for="program-env">Environment</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="program-budget"
-                  class="program-checkbox" />
-                <label for="program-budget">Executive Budget</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="program-govops"
-                  class="program-checkbox" />
-                <label for="program-govops">Government Operations</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="program-govinit"
-                  class="program-checkbox" />
-                <label for="program-govinit">Governor's Initiatives</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="program-health"
-                  class="program-checkbox" />
-                <label for="program-health">Health</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="program-safety"
-                  class="program-checkbox" />
-                <label for="program-safety">Safety and Justice</label>
-              </li>
-            </ul>
+            <!-- program links menu renders here--------------------->
+            
           </div>
         </div>
       </div>
 
 
     </section>
-
+<!-- program cards------------------------------->
     <section class="programs--">
       <div class="program-grid" id="program-container">
-   
+<!-- program cards renders here js -->
       </div>
     </section>
+
+
+    <!--  engagement and footer section -------------------->
 
    <section class="engagement-container">
 <div class="eng-column">
@@ -171,6 +109,7 @@
 </span> 
    </div>
    </section>
+
 
    <footer class="footer-container">
 <div class="footer-column-1" id="footer-column-1">

@@ -1,3 +1,16 @@
+const programsMenu = [
+  { id: "program-culture", label: "Culture & Recreation" },
+  { id: "program-disability", label: "Disability" },
+  { id: "program-econ", label: "Economic Development" },
+  { id: "program-edu", label: "Education and Arts" },
+  { id: "program-env", label: "Environment" },
+  { id: "program-budget", label: "Executive Budget" },
+  { id: "program-govops", label: "Government Operations" },
+  { id: "program-govinit", label: "Governor's Initiatives" },
+  { id: "program-health", label: "Health" },
+  { id: "program-safety", label: "Safety and Justice" },
+];
+
 const programsData = [
   {
     image: "/images/environment.png",
