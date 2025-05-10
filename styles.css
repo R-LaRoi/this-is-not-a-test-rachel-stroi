@@ -230,7 +230,7 @@ video {
 
 .programs-button {
   margin-top: 20px;
-  background: #154973;
+  background: transparent;
   color: #face01;
   font-weight: 400;
   border-radius: 20px;
@@ -238,7 +238,6 @@ video {
   padding: 10px;
   font-size: 1.2rem;
   cursor: pointer;
-
   font-family: inherit;
 }
 
@@ -261,7 +260,7 @@ video {
 .programs-links {
   width: 100vw;
   left: -30px;
-  background-color: #154973;
+  background-color: #012a4a;
   position: absolute;
   top: 105%;
   opacity: 0;
@@ -312,18 +311,17 @@ video {
 }
 
 .programs-links ul li label:hover {
-  background-color: #e0e0e0;
+  background-color: #154973;
   color: #333;
 }
 
 .programs-links ul li input[type="checkbox"]:checked + label {
-  background-color: #fff;
-  color: #154973;
-  font-weight: 700;
+  color: #face01;
+  text-decoration: underline;
 }
 
 .programs-links ul li input[type="checkbox"]:checked + label:hover {
-  background-color: #ccc;
+  /* background-color: #ccc; */
 }
 
 /* program grid and cards ---------------------------------*/

@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   renderGovCards(officialsData);
   renderGovLinks(govData);
   renderAgencyMenu(agenciesMenu);
+  renderAgencyCards(agencyData);
 
   const toggleCheckbox = document.getElementById("agency-toggle");
   const agencyMenuContainer = document.querySelector(".agency-menu");
@@ -118,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // agency dropdown menu selections ------------------------------------------------------------
 function renderAgencyMenu(agenciesMenu) {
   const container = document.querySelector(".agency-links");
-  container.innerHTML = ""; // Clear previous content
+  container.innerHTML = "";
   const ulAgencyMenu = document.createElement("ul");
   agenciesMenu.forEach((menuItem, idx) => {
     const agencyItem = document.createElement("li");
@@ -131,4 +132,22 @@ function renderAgencyMenu(agenciesMenu) {
     ulAgencyMenu.appendChild(agencyItem);
   });
   container.appendChild(ulAgencyMenu);
+}
+
+function renderAgencyCards(agencyData) {
+  const container = document.getElementById("agencies-cards");
+
+  agencyData.forEach((agency) => {
+    const agencyCard = document.createElement("div");
+    agencyCard.className = "program-card";
+    const agencyHTML = `
+            <img src="${agency.image}" alt="${agency.title}" class="program-image">
+            <div class="program-category">${agency.program}</div>
+            <h2 class="program-title">${agency.title}</h2>
+            <p class="program-subtitle">${agency.subtitle}</p>
+        `;
+
+    agencyCard.innerHTML = agencyHTML;
+    container.appendChild(agencyCard);
+  });
 }
