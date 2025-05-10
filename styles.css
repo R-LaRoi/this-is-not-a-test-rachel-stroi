@@ -230,22 +230,21 @@ video {
 
 .programs-button {
   margin-top: 20px;
-  background: #face01;
-  width: 210px;
-  color: #154973;
+  background: #154973;
+  color: #face01;
   font-weight: 400;
   border-radius: 20px;
   border: none;
   padding: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+
   font-family: inherit;
 }
 
 .programs-button:hover,
 .programs-toggle-label:hover .programs-button {
-  background-color: #8fadc4;
+  color: #f8f8f8;
 }
 
 .programs-toggle-checkbox {
@@ -260,7 +259,6 @@ video {
 }
 
 .programs-links {
-  border-top: 1px solid #8fadc4;
   width: 100vw;
   left: -30px;
   background-color: #154973;

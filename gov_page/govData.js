@@ -30,12 +30,19 @@ const govData = [
   },
   {
     branch: "Legislature",
-    links: [
-      "NY State Senate",
-      "NY State Senate",
-      "NY State Assembly",
-      "NY State Congressional Delegation ",
-    ],
+    links: ["NY State Assembly", "NY State Congressional Delegation "],
     image: "./gov_images/capital.jpg",
   },
+];
+
+const agenciesMenu = [
+  { id: "agency-admin", label: "Administration " },
+  { id: "agency-business", label: "Business" },
+  { id: "agency-edu", label: "Education" },
+  { id: "agency-environment", label: "Environment" },
+  { id: "agency-officials", label: "Statewide Elected Officials" },
+  { id: "agency-transport", label: "Transportation" },
+  { id: "agency-local-auth", label: "Local Authorities" },
+  { id: "agency-health", label: "Health" },
+  { id: "agency-safety", label: "Safety " },
 ];
