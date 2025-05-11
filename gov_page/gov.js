@@ -1,3 +1,4 @@
+// government page js ----------------------
 document.addEventListener("DOMContentLoaded", function () {
   renderGovCards(officialsData);
   renderGovLinks(govData);
@@ -16,11 +17,17 @@ document.addEventListener("DOMContentLoaded", function () {
     ) {
       toggleCheckbox.checked = false;
     }
+
+    // close gov-branch dropdowns
+    document.querySelectorAll(".gov-branch.active").forEach((dropdown) => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove("active");
+      }
+    });
   });
 });
 
-// governmemt officials cards ---------------------------------
-
+// government officials cards ---------------------------------
 function renderGovCards(officialsData) {
   const container = document.getElementById("gov-off");
   const ulGovCards = document.createElement("ul");
@@ -30,16 +37,16 @@ function renderGovCards(officialsData) {
     const liOffCard = document.createElement("li");
     liOffCard.innerHTML = ` 
     <div class="gov-card-content">
-    <div class="off-image-container">
-    <img class="off-image" src="${official.image}" alt="${official.name} portrait" />
-    </div>
-    <div class="officials-text">
+      <div class="off-image-container">
+        <img class="off-image" src="${official.image}" alt="${official.name} portrait" />
+      </div>
+      <div class="officials-text">
         <h3 class="off-title">${official.title}</h3>
         <h3 class="off-name">${official.name}</h3>
         <p class="off-subtext">${official.text}</p>
         <a href="${official.socials}" class="gov-card-link">Learn more about ${official.name} </a>
+      </div>
     </div>
-</div>
     `;
     ulGovCards.appendChild(liOffCard);
   });
@@ -47,7 +54,7 @@ function renderGovCards(officialsData) {
   container.appendChild(ulGovCards);
 }
 
-// government branch links dropdown menu -----------------------------------------
+// gov-branch dropdowns menu -----------------------------------------
 function renderGovLinks() {
   const container = document.getElementById("gov-links-container");
 
@@ -91,36 +98,12 @@ function renderGovLinks() {
   container.appendChild(ulElement);
 }
 
-document.addEventListener("click", function () {
-  const activeDropdowns = document.querySelectorAll(".gov-branch.active");
-  activeDropdowns.forEach((dropdown) => {
-    dropdown.classList.remove("active");
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const toggleCheckbox = document.getElementById("agency-dropdown-toggle");
-  const toggleButton = document.querySelector(".agency-button");
-
-  // show menu
-  toggleButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    toggleCheckbox.checked = !toggleCheckbox.checked;
-  });
-
-  //close menu
-  document.addEventListener("click", (e) => {
-    if (!e.target.closest(".agency-menu")) {
-      toggleCheckbox.checked = false;
-    }
-  });
-});
-
-// agency dropdown menu selections ------------------------------------------------------------
+// agency dropdown menu ------------------------------------------------------------
 function renderAgencyMenu(agenciesMenu) {
   const container = document.querySelector(".agency-links");
   container.innerHTML = "";
   const ulAgencyMenu = document.createElement("ul");
+
   agenciesMenu.forEach((menuItem, idx) => {
     const agencyItem = document.createElement("li");
     const id = `agency-item-${idx}`;
@@ -131,6 +114,7 @@ function renderAgencyMenu(agenciesMenu) {
     agencyItem.innerHTML = agencyHTML;
     ulAgencyMenu.appendChild(agencyItem);
   });
+
   container.appendChild(ulAgencyMenu);
 }
 
@@ -141,11 +125,11 @@ function renderAgencyCards(agencyData) {
     const agencyCard = document.createElement("div");
     agencyCard.className = "program-card";
     const agencyHTML = `
-            <img src="${agency.image}" alt="${agency.title}" class="program-image">
-            <div class="program-category">${agency.program}</div>
-            <h2 class="program-title">${agency.title}</h2>
-            <p class="program-subtitle">${agency.subtitle}</p>
-        `;
+      <img src="${agency.image}" alt="${agency.title}" class="program-image">
+      <div class="program-category">${agency.program}</div>
+      <h2 class="program-title">${agency.title}</h2>
+      <p class="program-subtitle">${agency.subtitle}</p>
+    `;
 
     agencyCard.innerHTML = agencyHTML;
     container.appendChild(agencyCard);
