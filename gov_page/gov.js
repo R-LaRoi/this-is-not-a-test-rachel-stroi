@@ -104,20 +104,32 @@ function renderAgencyMenu(agenciesMenu) {
   container.innerHTML = "";
   const ulAgencyMenu = document.createElement("ul");
 
-  agenciesMenu.forEach((menuItem, idx) => {
+  agenciesMenu.forEach((menuItem) => {
     const agencyItem = document.createElement("li");
-    const id = `agency-item-${idx}`;
+
     const agencyHTML = `
-      <input type="checkbox" id="${id}" class="agency-checkbox">
-      <label for="${id}" class="agency-link">${menuItem.label}</label>
+      <input type="checkbox" id="${menuItem.id}" class="agency-checkbox">
+      <label for="${menuItem.id}" class="agency-link">${menuItem.label}</label>
     `;
     agencyItem.innerHTML = agencyHTML;
     ulAgencyMenu.appendChild(agencyItem);
   });
 
   container.appendChild(ulAgencyMenu);
+
+  // select agencies
+  const agencyCheckboxes = document.querySelectorAll(".agency-checkbox");
+
+  agencyCheckboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      console.log(
+        checkbox.id + " is " + (checkbox.checked ? "checked" : "unchecked")
+      );
+    });
+  });
 }
 
+// agency data cards ------------------------------------------------
 function renderAgencyCards(agencyData) {
   const container = document.getElementById("agencies-cards");
 
