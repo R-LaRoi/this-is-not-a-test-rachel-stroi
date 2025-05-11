@@ -9,7 +9,7 @@ const officialsData = [
   {
     name: "Thomas P. DiNapoli",
     title: "Comptroller",
-    image: "./gov_images/dinapoli.jpg",
+    image: "./gov_images/tom.png",
     text: "Get information on the public service roles of the New York State Governor, Comptroller, and Attorney General.",
     socials: ["x", "fb", "youtube"],
   },
